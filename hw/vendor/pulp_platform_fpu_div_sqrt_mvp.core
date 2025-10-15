@@ -1,0 +1,32 @@
+CAPI=2:
+
+# Copyright 2024 Politecnico di Torino.
+# Solderpad Hardware License, Version 2.1, see LICENSE.md for details.
+# SPDX-License-Identifier: Apache-2.0 WITH SHL-2.1
+#
+# File: pulp_platform_fpu_div_sqrt_mvp.core
+# Author: Enrico Manfredi
+# Date: 15/10/2025
+# Description: corefile for pulp_platform_fpu_div_sqrt_mvp
+
+
+name: "pulp-platform.org::fpu_div_sqrt_mvp"
+description: Description for fpu_div_sqrt_mvp
+
+filesets:
+  rtl:
+    files:
+    - pulp_platform_fpu_div_sqrt_mvp/hdl/defs_div_sqrt_mvp.sv
+    - pulp_platform_fpu_div_sqrt_mvp/hdl/control_mvp.sv
+    - pulp_platform_fpu_div_sqrt_mvp/hdl/div_sqrt_mvp_wrapper.sv
+    - pulp_platform_fpu_div_sqrt_mvp/hdl/div_sqrt_top_mvp.sv
+    - pulp_platform_fpu_div_sqrt_mvp/hdl/iteration_div_sqrt_mvp.sv
+    - pulp_platform_fpu_div_sqrt_mvp/hdl/norm_div_sqrt_mvp.sv
+    - pulp_platform_fpu_div_sqrt_mvp/hdl/nrbd_nrsc_mvp.sv
+    - pulp_platform_fpu_div_sqrt_mvp/hdl/preprocess_mvp.sv
+    file_type: systemVerilogSource
+
+targets:
+  default: &default
+    filesets:
+      - rtl

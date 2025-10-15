@@ -8,7 +8,7 @@
 {
   upstream:
   {
-    url: https://github.com/pulp-platform/fpnew.git
-    rev: 2c7947726a0859c08cc27cbbd45662424dedb41e
+    url: https://github.com/pulp-platform/fpu_div_sqrt_mvp.git
+    rev: 86e1f558b3c95e91577c41b2fc452c86b04e85ac
   }
 }

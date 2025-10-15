@@ -7,7 +7,7 @@
 
   upstream: {
     url: "https://github.com/pulp-platform/fpnew.git",
-    rev: "79e453139072df42c9ec8f697132ba485d74e23d",
+    rev: "2c7947726a0859c08cc27cbbd45662424dedb41e",
   },
 
   exclude_from_upstream: [
@@ -26,6 +26,9 @@
     "vendor/opene906.lock.hjson"
     "vendor/opene906.vendor.hjson"
     "vendor/opene906/README.md"
+    "vendor/openc910.lock.hjson"
+    "vendor/openc910.vendor.hjson"
+    "vendor/openc910/README.md"
     "vendor/patches"
   ]
 }
