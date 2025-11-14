@@ -615,7 +615,7 @@ module fpu_ss
   //  FPnew
   // ------
   fpnew_top #(
-      .PulpDivsqrt   (PulpDivsqrt),
+      //.PulpDivsqrt   (PulpDivsqrt),
       .Features      (FPU_FEATURES),
       .Implementation(FPU_IMPLEMENTATION),
       .TagType       (fpu_tag_t)
