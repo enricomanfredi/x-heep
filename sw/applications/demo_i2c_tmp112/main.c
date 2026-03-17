@@ -5,6 +5,7 @@
 // Author: Enrico Manfredi
 // Date: 05/09/2025
 // Description: Example application to use the I2C peripheral with the TMP112 sensor
+// NOTE: this program needs at least 3 32-kB ram banks for code and data.
 
 #include <stdint.h>
 #include <stdio.h>
@@ -116,8 +117,8 @@ int main(int argc, char *argv[]){
 i2c_result_t TMP112_sensor_start_conversion(){
      
     uint8_t txBuffer[2]; 
-    txBuffer[1] = 0x60;
-    txBuffer[2] = 0xA0;
+    txBuffer[0] = 0x60;
+    txBuffer[1] = 0xA0;
 
     return i2c_write(Board_TMP_ADDR, TMP117_OBJ_CONFIG, txBuffer, 2);
 }

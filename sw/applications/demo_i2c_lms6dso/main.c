@@ -5,6 +5,7 @@
 // Author: Enrico Manfredi
 // Date: 04/03/2026
 // Description: Example application to use the I2C peripheral with the LSM6DSO sensor
+// NOTE: this program needs at least 3 32-kB ram banks for code and data.
 
 #include <stdint.h>
 #include <stdio.h>
