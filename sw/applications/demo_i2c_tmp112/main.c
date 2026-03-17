@@ -75,6 +75,7 @@ int main(int argc, char *argv[]){
     enable_timer_interrupt(); 
 
     PRINTF("=== TMP112 Test ===\n");
+    
 
     /* 1. Init I2C bus */
     if (initialize_i2c() != kDifI2cOk) {
